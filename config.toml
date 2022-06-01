@@ -1,0 +1,115 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "shadocs"
+categories = ['Development']
+tags = ['Development', 'Go', 'fast', 'Blogging']
+series = ['Go Web Dev']
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+[params]
+  # Website logo file paths
+
+
+  # Image file path displayed during a 404 error
+
+  # Favicon website file path
+
+  # Default layout used for the homepage
+  #homeLayout       = "onboarding"
+
+  siteContentOrder = "weight"
+  # Activate a global banner on all website pages
+  # globalBanner    = true
+  # Curent version of the website
+  currentVersion     = "latest"
+  # Url of the latest version of the website
+
+  # Keyboard shortcuts list
+  # For each shortcut following keys must be sets:
+
+  # - function = "Javascript function name to call by the shortcut"
+  [params.navbar.shortcuts]
+    # Example shortcut definition
+    [params.navbar.shortcuts.example]
+      keys     = ["Shift","1"]
+      function = "scExample"
+  # Taxonomies list
+  # For each taxonomy following keys can be sets:
+  # - icon = "Fontawesome classes associated to the taxonomy"
+    [params.taxonomies]
+        [params.taxonomies.categories]
+        icon = "fa-solid fa-table-cells"
+  
+    [params.includes]
+    #     sass = [
+    #     "sass/file1.sass",
+    #     "sass/fileX.sass"
+    #     ]
+    #     css = [
+    #     "css/file1.css",
+    #     "css/fileX.css"
+    #     ]
+    #     js = [
+    #     "js/file1.js",
+    #     "js/fileX.js"
+    #     ]
+    # [params.includes.shortcodes.sass]
+    #     shortcode1 = [
+    #         "sass/shortcodes/shortcode1.sass"
+    #     ]
+    #     shortcodeX = [
+    #         "sass/shortcodes/shortcodeX.sass"
+    #     ]
+    # [params.includes.shortcodes.css]
+    #     shortcode1 = [
+    #         "css/shortcodes/shortcode1.css"
+    #     ]
+    #     shortcodeX = [
+    #         "css/shortcodes/shortcodeX.css"
+    #     ]
+    # [params.includes.shortcodes.js]
+    #     shortcode1 = [
+    #         "js/shortcodes/shortcode1.js"
+    #     ]
+    #     shortcodeX = [
+    #         "js/shortcodes/shortcodeX.js"
+    #     ]
+    # [params.includes.shortcodes.jsModules]
+    #     shortcode1 = [
+    #         "js/shortcodes/modules/shortcode1.js"
+    #     ]
+    #     shortcodeX = [
+    #         "js/shortcodes/modules/shortcodeX.js"
+    #     ]
+    # [params.includes.fencedcodes.css]
+    #     shortcode1 = [
+    #         "css/fencedcodes/shortcode1.css"
+    #     ]
+    #     shortcodeX = [
+    #         "css/fencedcodes/shortcodeX.css"
+    #     ]
+    # [params.includes.fencedcodes.js]
+    #     shortcode1 = [
+    #         "js/fencedcodes/shortcode1.js"
+    #     ]
+    #     shortcodeX = [
+    #         "js/fencedcodes/shortcodeX.js"
+    #     ]
+    # [params.includes.fencedcodes.jsModules]
+    #     shortcode1 = [
+    #         "js/fencedcodes/modules/shortcode1.js"
+    #     ]
+    #     shortcodeX = [
+    #         "js/fencedcodes/modules/shortcodeX.js" 
+    #         ]
+     
+[outputs]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true

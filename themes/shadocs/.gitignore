@@ -1,0 +1,12 @@
+# Common Hugo files to ignore
+/public/
+/resources/_gen/
+exampleSite/public
+exampleSite/resources/_gen/
+
+# Ignore npm files
+node_modules/
+
+# Cypress files to ignore
+/cypress/downloads/
+debug.log
